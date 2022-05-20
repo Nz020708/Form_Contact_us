@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+    </style>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header-container">
+                <div class="contact-us">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="contact-us">
+        <div class="form-container">
+            <form class="form" action="#">
+                <label for="full-name">Full Name <span>*</span></label>
+                <div class="full-name-form">
+                    <div>
+                        <input class="full-name" name="firstname" type="text" required minlength="3">
+                        <p class="first">First</p>
+                        <!-- <p id="minlength">Your first name must be at least 3 characters long.</p> -->
+                    </div>
+                    <div>
+                        <input class="full-name"name="lastname" type="text" required minlength="3">
+                        <p class="last">Last</p>
+                        <!-- <p id="minlength">Your last name must be at least 3 characters long.</p> -->
+                    </div>
+                </div>
+               <div class="email-form">
+                <label for="email">Email <span>*</span></label>
+                <div>
+                    <input class="email" name="email" type="email" required>
+                </div>
+               </div>
+               <div class="birthday-form">
+                <label for="birthday">Birthday <span>*</span></label>
+                <div>
+                    <input class="birthday" name="birthday" type="date" required>
+                </div>
+               </div>
+               <button id="btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
