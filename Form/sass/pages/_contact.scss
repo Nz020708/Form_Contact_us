@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contact-us{
+    background-color: rgb(39, 226, 232);
+    width: 100%;
+    height: 90px;
+   h1{
+       color: white;
+       padding: 12px 40px;
+       line-height: 2;
+       font-family: $primary-font;
+       font-size: 35px;
+   }
+
+}
+#contact-us{
+    padding: 25px 30px;
+    font-family: $primary-font;
+    font-size: 20px;
+    form{
+        display:inline-block;
+        position: relative;
+        label{
+            span{
+                color: red;
+            }
+        }
+        input{
+            margin:10px 0px;
+        }
+        .email-form,.age-form{
+            margin: 20px 0px;
+        }
+        .full-name-form{
+            display: flex;
+            .first-name,.last-name{
+                @include size(380px,40px);
+                margin:10px 4px;
+                
+            }
+            p{
+                color: grey;
+                font-size: 14px;
+                margin-left: 3px;
+            }
+        }
+       
+         
+        .email{
+         @include size(440px,40px);
+        
+        }
+       .birthday{
+         @include size(100px,40px);
+       }
+       button{
+           padding: 20px 40px;
+           color: white;
+           background-color:rgb(39, 226, 232) ;
+           border: 0;
+           position: absolute;
+           bottom:-90px ;
+       }
+    }
+     
+}
